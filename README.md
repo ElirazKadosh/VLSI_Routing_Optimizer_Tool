@@ -3,7 +3,7 @@
 
 ## Overview
 
-`VLSI_Routing_Optimizer_Tool` is a Python-based graphical tool for routing optimization in VLSI designs. It leverages GeoSteiner's exact algorithm to compute **Rectilinear Steiner Minimum Trees (RSMTs)** for interconnect nets, resulting in minimal wirelength.
+`VLSI_Routing_Optimizer_Tool` is a Python-based graphical tool for routing optimization in VLSI designs.
 
 ![Top Level Flow](images/top_level_flow.png)
 
