@@ -1,0 +1,147 @@
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO AND2_X1
+  CLASS CORE ;
+  FOREIGN AND2_X1 ;
+  ORIGIN 0 0 ;
+  SIZE 1.0 BY 1.0 ;
+  SYMMETRY X Y R90 ;
+
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+      RECT 2 18 4 20 ;
+    END
+  END A
+
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 2 2 4 4 ;
+    END
+  END B
+
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 16 8 18 12 ;
+    END
+  END Y
+
+END AND2_X1
+
+MACRO NOT_X1
+  CLASS CORE ;
+  FOREIGN NOT_X1 ;
+  ORIGIN 0 0 ;
+  SIZE 1.0 BY 1.0 ;
+  SYMMETRY X Y R90 ;
+
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+      RECT 2 18 4 20 ;
+    END
+  END A
+
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 2 2 4 4 ;
+    END
+  END B
+
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 16 8 18 12 ;
+    END
+  END Y
+
+END NOT_X1
+
+MACRO OR2_X1
+  CLASS CORE ;
+  FOREIGN OR2_X1 ;
+  ORIGIN 0 0 ;
+  SIZE 1.0 BY 1.0 ;
+  SYMMETRY X Y R90 ;
+
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+      RECT 2 18 4 20 ;
+    END
+  END A
+
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 2 2 4 4 ;
+    END
+  END B
+
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 32 16 36 24 ;
+    END
+  END Y
+
+END OR2_X1
+
+MACRO DFF
+  CLASS CORE ;
+  FOREIGN DFF ;
+  ORIGIN 0 0 ;
+  SIZE 1.0 BY 1.0 ;
+  SYMMETRY X Y R90 ;
+
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+      RECT 2 18 4 20 ;
+    END
+  END A
+
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 2 2 4 4 ;
+    END
+  END B
+
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+	  RECT 16 8 18 12 ;
+    END
+  END Y
+
+END DFF

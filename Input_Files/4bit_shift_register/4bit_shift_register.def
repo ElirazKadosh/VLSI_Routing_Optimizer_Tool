@@ -1,0 +1,41 @@
+VERSION 5.6 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN two_metal_layers ;
+UNITS DISTANCE MICRONS 1000 ;
+
+COMPONENTS 4 ;
+   - U1 DFF 
+      + PLACED ( 200 350 ) N ;
+   - U2 DFF 
+      + PLACED ( 600 100 ) N ;
+   - U3 DFF 
+      + PLACED ( 350 230 ) N ;
+   - U4 DFF 
+      + PLACED ( 50 50 ) N ;
+END COMPONENTS
+
+PINS 3 ;
+   - enable + NET clk + DIRECTION INPUT + USE SIGNAL 
+      + LAYER M1 ( 0 0 ) ( 10 10 )
+      + PLACED ( 10 100 ) N ;
+   - data_in + NET data_in + DIRECTION INPUT + USE SIGNAL 
+      + LAYER M1 ( 0 0 ) ( 10 10 )
+      + PLACED ( 40 200 ) N ;
+   - data_out + NET data_out + DIRECTION OUTPUT + USE SIGNAL 
+      + LAYER M2 ( 0 0 ) ( 10 10 )
+      + PLACED ( 70 50 ) N ;
+END PINS
+
+NETS 4 ;
+   - net1 ( U1 a ) ( U1 b ) ( U1 n1 )
+      + ROUTED M1 ( 100 200 ) ( 150 200 ) ;
+   - net2 ( U2 n1 ) ( U2 n2 )
+      + ROUTED M1 ( 300 200 ) ( 350 200 ) ;
+   - net3 ( U3 n2 ) ( U3 b ) ( U3 y )
+      + ROUTED M2 ( 500 200 ) ( 550 200 ) ( 600 200 ) ;
+   - net4 ( U3 n2 ) ( U3 b ) ( U3 y )
+      + ROUTED M2 ( 500 200 ) ( 550 200 ) ( 600 200 ) ;	  
+END NETS
+
+END DESIGN
