@@ -5,6 +5,7 @@
 
 `VLSI_Routing_Optimizer_Tool` is a Python-based graphical tool for routing optimization in VLSI designs.
 
+## GUI
 ![GUI](images/GUI.png)
 
 ## Features
@@ -30,32 +31,6 @@ VLSI_Routing_Optimizer_Tool/
 └── geosteiner-5.3/        # GeoSteiner compiled library
 ```
 
-## Installation
-
-**Requirements:** Ubuntu Linux, Python 3.10+, gcc, make
-
-```bash
-sudo apt update
-sudo apt install build-essential libtool python3.10 python3-tk
-```
-
-**GeoSteiner Installation:**
-
-```bash
-tar -xf geosteiner-5.3.tar
-cd geosteiner-5.3
-./configure CFLAGS="-fPIC"
-make -j$(nproc)
-cd .libs
-gcc -shared -o libgeosteiner.so *.o ../lp_solve_2.3/*.o -lm
-cp libgeosteiner.so ..
-```
-
-Export the library path:
-
-```bash
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/..
-```
 
 ## Running the Tool
 
@@ -81,22 +56,14 @@ Each signal optimization creates:
 - A JSON file with detailed geometry & length
 - A log file with runtime and debug info
 
-Example JSON output:
-
-```json
-{
-  "terminals": [[0, 0], [0, 10], [5, 5]],
-  "length": 15.0,
-  "steiner_points": [[0.0, 5.0]],
-  "edges": [[[0, 0], [0.0, 5.0]], [[0, 10], [0.0, 5.0]], [[5, 5], [0.0, 5.0]]]
-}
-```
+## Program Flowchart
 
 ![Program Flowchart](images/Program_Flowchart.png)
+<img src="Program_Flowchart.png" alt="Program Flowchart" width="500"/>
 
 ## Credits
 
-Developed as part of Project B at the VLSI Lab, Technion Faculty of Electrical & Computer Engineering.
+Developed as part of Project at the VLSI Lab, Technion Faculty of Electrical & Computer Engineering.
 
 **Contributors:**
 
