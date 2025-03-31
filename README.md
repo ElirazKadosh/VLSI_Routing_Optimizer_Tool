@@ -1,6 +1,6 @@
 # VLSI Routing Optimizer Tool
 
-![Top Level Flow](top_level_flow.png)
+![Top Level Flow](images/top_level_flow.png)
 
 ## Overview
 
@@ -91,7 +91,7 @@ Example JSON output:
 }
 ```
 
-![Program Flowchart](Program_Flowchart.png)
+![Program Flowchart](images/Program_Flowchart.png)
 
 ## Credits
 
