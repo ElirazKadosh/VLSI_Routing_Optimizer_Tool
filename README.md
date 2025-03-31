@@ -58,7 +58,7 @@ Each signal optimization creates:
 
 ## Program Flowchart
 
-<img src="Program_Flowchart.png" alt="Program Flowchart" width="500"/>
+![Program Flowchart](images/Program_Flowchart.png)
 
 ## Credits
 
