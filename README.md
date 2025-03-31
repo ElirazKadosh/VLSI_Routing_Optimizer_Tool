@@ -5,7 +5,7 @@
 
 `VLSI_Routing_Optimizer_Tool` is a Python-based graphical tool for routing optimization in VLSI designs.
 
-![Top Level Flow](images/top_level_flow.png)
+![GUI](images/GUI.png)
 
 ## Features
 
