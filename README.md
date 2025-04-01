@@ -69,6 +69,14 @@ Developed as part of Project at the VLSI Lab, Technion Faculty of Electrical & C
 - Eliram Amrusi
 - Eliraz Kadosh
 
+### Eliraz Kadosh
+- [GitHub](https://github.com/elirazkadosh)
+- [LinkedIn](https://www.linkedin.com/in/eliraz-kadosh)
+
+### Eliram Amrusi
+- [GitHub](https://github.com/eliramamrusi)
+- [LinkedIn](https://www.linkedin.com/in/eliram-amrusi-11b949258)
+
 **Supervisor:**
 
 - Amnon Stanislavsky
